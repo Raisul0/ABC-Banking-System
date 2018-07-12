@@ -1,0 +1,83 @@
+﻿<html>
+<head>
+    <link rel="stylesheet" href="../../Contents/UserDesign_Base.css">
+    <script type="text/javascript" src="../../Contents/jquery-3.3.1.js"></script>
+    <script type="text/javascript" src="../../Contents/officerscript.js"></script>
+
+    <!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">-->
+
+    <title>Online RAM Banking:Loan Payment</title>
+</head>
+
+<body>
+    <div id="wholeBody">
+        <div id="topHead">
+            <header>
+                <div id="logoadmin">
+                    <img src="">
+                </div>
+                <p><h1 id="textadmin">Welcome </b><label id="headname"></label></h1></p>
+                <div id="divtop">
+
+                </div>
+
+            </header>
+        </div>
+
+        <div id="sidebar">
+            <script>
+                $(document).ready(function () {
+                    $("#sidebar").load("osidebar.html");
+                });
+            </script>
+        </div>
+
+        <div id="mainbody">
+            <div id="content">
+                <h2>Loan Payment</h2>
+
+                <table>
+                    <tbody>
+                        <tr>
+                            <td><b>Customer Name</b></td>
+                            <td>:</td>
+                            <td><input type="text" id="loanname" /></td>
+                        </tr>
+                        <tr>
+                            <td><b>Customer Account No</b></td>
+                            <td>:</td>
+                            <td><input type="text" id="loanAccno" /></td>
+                        </tr>
+                        <tr>
+                            <td><b>Pay Loan Amount</b></td>
+                            <td>:</td>
+                            <td><input type="number" id="LoanPamount" required="" class="input_text" /></td>
+                        </tr>
+                        <tr>
+                            <td><b>Remaining Amount</b></td>
+                            <td>:</td>
+                            <td><input type="number" id="LoanRemainAmount" required="" value="Click Load" class="input_text" readonly/></td>
+                        </tr>
+                        <tr>
+                            <td><button id="loanRemain">Load Remaining</button></td>
+                            <td><button id="loanPayclk">Payment</button></td>
+                        </tr>
+                    </tbody>
+                </table>
+
+            </div>
+
+            <div id="foot">
+                <footer>
+                    <div color="red">
+                        <b">
+                            © RAM Bank LTD. 2014</b>
+                            </br><a id="aboutUs" href="">About Us</a>
+                    </div>
+                    <label id="msg"></label>
+                </footer>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
